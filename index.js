@@ -33,7 +33,7 @@ function handleClick(e){
     boxElement[i-1].appendChild(text);
 
     if(clicks % 2 == 0){
-        xAttempts.push(parseInt[i-1]);
+        xAttempts.push(parseInt(i-1));
         text.innerHTML = "X";
         text.style.color = "#FAB201";
         result(winningCombinations, xAttempts, "X");
@@ -76,7 +76,7 @@ function result(winningCombinations, attempts, player){
             }
         }
     }
-    if(checker.every(check => check ===true)&& flag>2){
+    if(checker.every(check => check === true) && flag > 2){
         gameResult.style.visibility = "visible";
         message.innerHTML = "'" + player + "'" + "Won the game";
         wonTheGame = 1;
